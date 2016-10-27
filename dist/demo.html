@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>小图标示例</title>
+  <link rel="stylesheet" href="./png/icon.css" charset="utf-8">
+  <link rel="stylesheet" href="./svg/icon.css" charset="utf-8">
+  <link rel="stylesheet" href="./font/_icons.css" charset="utf-8">
+  <style>
+    .table {
+      width: 100%;
+      border-collapse: collapse
+    }
+    .table td {
+      border: 1px solid #000;
+      height: 50px;
+      text-align: center;
+    }
+    .table pre {
+      text-align: left;
+    }
+    col {
+      width: 30%;
+    }
+  </style>
+</head>
+<body>
+  <table class="table" cellspacing="0">
+    <colgroup>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <tr>
+      <td></td>
+      <td>png sprite</td>
+      <td>iconfont</td>
+      <td>svg sprite</td>
+    </tr>
+    <tr>
+      <td>图标1</td>
+      <td><i class="icon icon-hook"></i></td>
+      <td><i class="iconfont iconfont-hook"></i></td>
+      <td>
+        <svg class="svg-hook">
+          <use xlink:href="./svg/icon.svg#hook"></use>
+        </svg>
+      </td>
+    </tr>
+    <tr>
+      <td>图标2</td>
+      <td><i class="icon icon-question"></i></td>
+      <td><i class="iconfont iconfont-question"></i></td>
+      <td>
+        <svg class="svg-question">
+          <use xlink:href="./svg/icon.svg#question"></use>
+        </svg>
+      </td>
+    </tr>
+    <tr>
+      <td>css代码</td>
+      <td>
+        <pre>
+  .icon {
+    display: inline-block;
+  }
+  .icon-hook {
+    background-image: url(icon.png);
+    background-position: -40px 0px;
+    width: 20px;
+    height: 20px;
+  }
+  .icon-question {
+    background-image: url(icon.png);
+    background-position: 0px 0px;
+    width: 40px;
+    height: 40px;
+  }
+        </pre>
+      </td>
+      <td>
+        <pre>
+  @font-face {
+  	font-family: "iconfont";
+  	src: url('./iconfont.eot');
+  	src: url('./iconfont.eot?#iefix') format('eot'),
+  		url('./iconfont.woff2') format('woff2'),
+  		url('./iconfont.woff') format('woff'),
+  		url('./iconfont.ttf') format('truetype'),
+  		url('./iconfont.svg#iconfont') format('svg');
+  }
+  .iconfont {
+  	font-size: 40px;
+  	font-family: "iconfont";
+  		-webkit-font-smoothing: antialiased;
+  		-moz-osx-font-smoothing: grayscale;
+  	font-style: normal;
+  	font-variant: normal;
+  	font-weight: normal;
+  	text-decoration: none;
+  	text-transform: none;
+  }
+  .iconfont-hook:before {
+  	content: "\E001";
+  }
+  .iconfont-question:before {
+  	content: "\E002";
+  }
+        </pre>
+      </td>
+      <td>
+        <pre>
+  .svg-hook {
+  	width: 16px;
+  	height: 16px;
+  }
+  .svg-question {
+  	width: 40px;
+  	height: 40px;
+  }
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>生成文件</td>
+      <td>icon.csss/icon.png</td>
+      <td>_icon.csss/iconfont.svg/iconfont.eot/iconfont.ttf/iconfont.woff/iconfont.woff2</td>
+      <td>icon.csss/icon.svg</td>
+    </tr>
+    <tr>
+      <td>引用方式</td>
+      <td>
+        &lti class="icon icon-hook"&gt&lt/i&gt <br>
+        &lti class="icon icon-question"&gt&lt/i&gt
+      </td>
+      <td>
+        &lti class="iconfont iconfont-hook"&gt&lt/i&gt <br>
+        &lti class="iconfont iconfont-question"&gt&lt/i&gt
+      </td>
+      <td>
+        &ltsvg class="svg-hook"&gt <br>
+          &ltuse xlink:href="./svg/icon.svg#hook"&gt&lt/use&gt <br>
+        &lt/svg&gt<br>
+        &ltsvg class="svg-question"&gt<br>
+          &ltuse xlink:href="./svg/icon.svg#question"&gt&lt/use&gt<br>
+        &lt/svg&gt
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

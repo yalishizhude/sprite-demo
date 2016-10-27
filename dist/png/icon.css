@@ -1,0 +1,15 @@
+.icon {
+  display: inline-block;
+}
+.icon-hook {
+  background-image: url(icon.png);
+  background-position: -40px 0px;
+  width: 16px;
+  height: 16px;
+}
+.icon-question {
+  background-image: url(icon.png);
+  background-position: 0px 0px;
+  width: 40px;
+  height: 40px;
+}
