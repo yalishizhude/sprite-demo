@@ -1,7 +1,7 @@
-# 小图标处理demo
+# 灏忓浘鏍囧鐞哾emo
 
-* node.js：v4.4.5 *
+node.js锛歷4.4.5 
 
-原文地址：[前端处理小图标的那些解决方案（图文实操）](http://yalishizhude.github.io/2016/10/27/icon/)
+鍘熸枃鍦板潃锛歔銆婂墠绔鐞嗗皬鍥炬爣鐨勯偅浜涜В鍐虫柟妗堬紙鍥炬枃瀹炴搷锛夈�媇(http://yalishizhude.github.io/2016/10/27/icon/)
 
-[总结](!./summary.png)
+![鎬荤粨](./summary.png)
